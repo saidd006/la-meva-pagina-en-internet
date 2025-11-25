@@ -8,9 +8,36 @@
 <body>
     <form action="/comprar-altavoz" method="post" autocomplete="on">
   <fieldset>
-    <legend>Compra de altavoces</legend>
+    <legend>Compra de Altavoces</legend>
+
 
     <label for="modelo">Modelo:</label>
+    <select id="modelo" name="modelo" required>
+      <option value="" disabled selected>Selecciona un modelo</option>
+      <option value="R4">R4</option>
+      <option value="R5">R5</option>
+      <option value="SR1">SR1</option>
+    </select>
+
+    <label for="potencia">Potencia máxima (50-100W):</label>
+    <input id="potencia" type="number" name="potencia" min="50" max="100" placeholder="Ej: 75" required>
+
+    <fieldset>
+      <legend>¿Bluetooth?</legend>
+      <label>
+        <input type="radio" name="bluetooth" value="sí" required> Sí
+      </label>
+      <label>
+        <input type="radio" name="bluetooth" value="no"> No
+      </label>
+    </fieldset>
+
+    <label for="color">Color:</label>
+    <input id="color" type="color" name="color" value="#000000">
+
+    <button type="submit">Comprar</button>
+  </fieldset>
+</form>
 
 </body>
 </html>
