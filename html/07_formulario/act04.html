@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/buscar-camaras" method="get" autocomplete="on">
+  <fieldset>
+    <legend>Buscar cámaras de fotos</legend>
+
+ 
+    <label for="marca">Marca</label>
+    <select id="marca" name="marca">
+      <option value="" disabled selected>Selecciona una marca</option>
+      <option value="canon">Canon</option>
+      <option value="nikon">Nikon</option>
+      <option value="sony">Sony</option>
+      <option value="fujifilm">Fujifilm</option>
+      <option value="panasonic">Panasonic</option>
+    </select></br>
+
+   
+    <label for="tipo">Tipo de cámara</label>
+    <select id="tipo" name="tipo">
+      <option value="" disabled selected>Selecciona un tipo</option>
+      <option value="dslr">Réflex (DSLR)</option>
+      <option value="mirrorless">Mirrorless</option>
+      <option value="compacta">Compacta</option>
+      <option value="bridge">Bridge</option>
+      <option value="instantanea">Instantánea</option>
+    </select></br>
+
+  
+    <label for="precioMin">Precio mínimo (€)</label>
+    <input id="precioMin" type="number" name="precioMin" min="0" step="50" placeholder="0">
+
+    <label for="precioMax">Precio máximo (€)</label>
+    <input id="precioMax" type="number" name="precioMax" min="0" step="50" placeholder="1000">
+    </br>
+ 
+    <label for="resolucion">Resolución mínima (MP)</label>
+    <input id="resolucion" type="number" name="resolucion" min="1" step="1" placeholder="Ej: 20">
+    </br>
+
+
+    <label>
+      <input type="checkbox" name="wifi"> Conectividad WiFi
+    </label>
+    <label>
+      <input type="checkbox" name="video4k"> Grabación en 4K
+    </label>
+    <label>
+      <input type="checkbox" name="estabilizador"> Estabilizador de imagen
+    </label>
+
+ 
+    <button type="submit">Buscar cámaras</button>
+  </fieldset>
+</form>
+
+</body>
+</html>
