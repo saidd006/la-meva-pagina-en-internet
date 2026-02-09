@@ -1,0 +1,16 @@
+:root {
+    --color-principal: #D95B43;
+}
+
+h1 {
+    color: var(--color-principal);
+}
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
