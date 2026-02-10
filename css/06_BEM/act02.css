@@ -1,0 +1,18 @@
+.comentarios {
+    max-width: 600px;
+}
+
+.comentario {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.comentario__autor {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.comentario__texto {
+    margin: 0;
+}
