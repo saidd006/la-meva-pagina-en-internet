@@ -1,0 +1,24 @@
+.texto {
+    color: #000;
+    font-family: serif;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.amarillo {
+    color: #f4b400;
+}
+
+.azul {
+    color: #1a73e8;
+}
+
+.morado {
+    color: #8e24aa;
+}
+
+.verde {
+    color: #2e7d32;
+}
